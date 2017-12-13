@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Button id="register" fx:id="register" layoutX="208.0" layoutY="200.0" mnemonicParsing="false" onAction="#regClick" text="Register" />
+      <ChoiceBox layoutX="300.0" layoutY="161.0" prefHeight="27.0" prefWidth="48.0" />
+      <ComboBox layoutX="300.0" layoutY="125.0" prefHeight="27.0" prefWidth="48.0">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </ComboBox>
+      <RadioButton layoutX="187.0" layoutY="132.0" mnemonicParsing="false" text="Male">
+         <font>
+            <Font size="10.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="gender" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton layoutX="235.0" layoutY="132.0" mnemonicParsing="false" text="Female" toggleGroup="$gender">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </RadioButton>
+      <TextField id="user" fx:id="user" layoutX="187.0" layoutY="30.0" promptText="Username" />
+      <PasswordField id="pass" fx:id="pass" layoutX="187.0" layoutY="76.0" promptText="Passsowrd" />
+      <Label id="alert" fx:id="alert" layoutX="187.0" layoutY="14.0" text="Passwor &amp; Username Required:" textFill="#9e0303" visible="false">
+         <font>
+            <Font name="Verdana Italic" size="10.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.media.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="368.0" prefWidth="696.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SliderController">
+   <children>
+      <ImageView fx:id="viewpic" fitHeight="131.0" fitWidth="289.0" layoutX="184.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView id="id" fx:id="pic1" fitHeight="80.0" fitWidth="161.0" layoutX="14.0" layoutY="209.0" onMouseClicked="#initialize" pickOnBounds="true">
+         <image>
+            <Image url="@../images/blue.jpg" />
+         </image>
+      </ImageView>
+      <ImageView id="id" fx:id="pic2" fitHeight="80.0" fitWidth="161.0" layoutX="236.0" layoutY="212.0" onMouseClicked="#initialize" pickOnBounds="true">
+         <image>
+            <Image url="@../images/eclips.jpg" />
+         </image>
+      </ImageView>
+      <ImageView id="id" fx:id="pic3" fitHeight="80.0" fitWidth="161.0" layoutX="450.0" layoutY="212.0" onMouseClicked="#initialize" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/nebula.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>
